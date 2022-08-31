@@ -3,12 +3,12 @@ html, body {
     width: 100%;
     margin: 0;
     display: table;
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
 }
 
 header {
-border-radius: 5px;
-background-color: rgb(186, 186, 186);
+    border-radius: 5px;
+    background-color:rgb(186, 186, 186);
 }
 
 footer {
@@ -17,3 +17,21 @@ footer {
     height: 0;
 }
 
+#drop-btn {
+    background-color: #fffff2;
+}
+
+#navbarNavDropdown ul li {
+    font-family: 'Lobster', cursive;
+    font-size: 1.4rem;
+}
+
+#navbarNavDropdown ul li :hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: transform 150ms;
+    transform: scale(1.07); 
+}
+#game-name {
+    font-size: 1.3rem;
+}
