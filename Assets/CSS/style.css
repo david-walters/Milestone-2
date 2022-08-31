@@ -1,0 +1,19 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: table;
+    background-color: azure;
+}
+
+header {
+border-radius: 5px;
+background-color: rgb(186, 186, 186);
+}
+
+footer {
+    background-color: rgb(186, 186, 186);
+    display: table-row;
+    height: 0;
+}
+
