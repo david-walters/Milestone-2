@@ -3,7 +3,7 @@ html, body {
     width: 100%;
     margin: 0;
     display: table;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(143 143 143);
 }
 
 header {
@@ -24,6 +24,7 @@ footer {
 #navbarNavDropdown ul li {
     font-family: 'Lobster', cursive;
     font-size: 1.4rem;
+    margin-left: 5;
 }
 
 #navbarNavDropdown ul li :hover{
@@ -32,6 +33,7 @@ footer {
     transition: transform 150ms;
     transform: scale(1.07); 
 }
+
 #game-name {
     font-size: 1.3rem;
 }
