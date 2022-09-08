@@ -2,20 +2,30 @@
 font-size: 2.5em;
 font-family: 'Signika Negative', sans-serif;
 font-weight: 600;
-color: #000000;
-text-shadow: 2px 2px 0 #bcbcbc, -1px 4px 0 #9c9c9c;
+color: #1c6841;
+text-shadow: 0px 0px 3px #f3d67f, 0px 0px 8px #f3d67f;
 }
 
 #p1 {
 font-size: 1.7em;
 margin-bottom: 1.2em;
+color: #1c6841;
+text-shadow: 0px 0px 3px #f3d67f, 0px 0px 8px #f3d67f;
 }
 
 .htp-text {
 font-size: 1.2em;
 font-family: 'Kanit', sans-serif;
 text-align: center;
+color: rgb(35, 35, 35);
 }
+.htp-text-last {
+    font-size: 1.2em;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    color: #1c6841;
+    text-shadow: 0px 0px 3px #f3d67f, 0px 0px 8px #f3d67f;
+    }
 
 #card-shadow {
     -webkit-box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.54); 
@@ -24,10 +34,10 @@ text-align: center;
 }
 
 hr {
-    border: .1rem solid rgb(106, 106, 106);
+    border: .1rem solid #1c6841;
     border-radius: 5px;
     margin-left: 10%;
     margin-right: 10%;
-    -webkit-box-shadow: 0px 5px 7px 0px rgb(0 0 0 / 34%); 
-    box-shadow: 0px 5px 7px 0px rgb(0 0 0 / 34%);
+    -webkit-box-shadow: 0px 0px 3px #f3d67f, 0px 0px 8px #f3d67f; 
+    box-shadow: 0px 0px 3px #f3d67f, 0px 0px 8px #f3d67f;
 }
