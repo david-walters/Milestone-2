@@ -94,14 +94,17 @@ footer {
     width: 100%;
     max-width: 330px;
     height: 75%;
-    border-radius: 5px;
-    border: solid 7.5px  #1c6841;
+    max-height: 224px;
+    border-radius: 20px;
+    border: solid 6px  #1c6841;
+    padding: 1.1px 1.2px;
     
 }
 
 h4 {
     font-family: 'Patrick Hand', cursive;
     font-size: 190%;
+    margin-bottom: -20px;
 }
 
 .btn-grid {
@@ -112,6 +115,6 @@ h4 {
 }
 
 #next-btn {
-   margin-top: 3rem;
+   margin-top: 10px;
    max-height: 50px;
 }
