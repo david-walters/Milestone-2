@@ -38,6 +38,8 @@ function next(id) {
 
 //The following code will make the correct answer exclusively highlight as bright green when the correct answer is selected
 //It will also become disabled to stop adding to the score and the wrong ones will also become disabled for a goo effect
+//It will also remove hide on the next button to reveal it
+//It will also change the image to the animal of the correct answer
 
 correct1.addEventListener('click', makeGreen1);
 correct2.addEventListener('click', makeGreen2);
@@ -59,6 +61,7 @@ function makeGreen1() {
     wrong1.forEach((e) => {e.disabled = true;});
     let hide = document.getElementById('hide1');
     hide.classList.remove('hide');
+    document.getElementById("image1").src = "Assets/Images/elephant.webp";
 }
 
 function makeGreen2() {
@@ -70,6 +73,7 @@ function makeGreen2() {
     wrong2.forEach((e) => {e.disabled = true});
     let hide = document.getElementById('hide2');
     hide.classList.remove('hide');
+    document.getElementById("image2").src = "Assets/Images/sheep.jpg";
 }
 
 function makeGreen3() {
@@ -81,6 +85,7 @@ function makeGreen3() {
     wrong3.forEach((e) => {e.disabled = true});
     let hide = document.getElementById('hide3');
     hide.classList.remove('hide');
+    document.getElementById("image3").src = "Assets/Images/bat.jpg";
 }
 
 function makeGreen4() {
@@ -92,6 +97,7 @@ function makeGreen4() {
     wrong4.forEach((e) => {e.disabled = true});
     let hide = document.getElementById('hide4');
     hide.classList.remove('hide');
+    document.getElementById("image4").src = "Assets/Images/whale.jpg";
 }
 
 function makeGreen5() {
@@ -103,6 +109,7 @@ function makeGreen5() {
     wrong5.forEach((e) => {e.disabled = true});
     let hide = document.getElementById('hide5');
     hide.classList.remove('hide');
+    document.getElementById("image5").src = "Assets/Images/barn-owl.jpg";
 }
 
 function makeGreen6() {
@@ -114,6 +121,7 @@ function makeGreen6() {
     wrong6.forEach((e) => {e.disabled = true})
     let hide = document.getElementById('hide6');
     hide.classList.remove('hide');
+    document.getElementById("image6").src = "Assets/Images/seagull.jpg";
 }
 
 function makeGreen7() {
@@ -125,6 +133,7 @@ function makeGreen7() {
     wrong7.forEach((e) => {e.disabled = true})
     let hide = document.getElementById('hide7');
     hide.classList.remove('hide');
+    document.getElementById("image7").src = "Assets/Images/toad.jpg";
 }
 
 function makeGreen8() {
@@ -136,6 +145,7 @@ function makeGreen8() {
     wrong8.forEach((e) => {e.disabled = true})
     let hide = document.getElementById('hide8');
     hide.classList.remove('hide');
+    document.getElementById("image8").src = "Assets/Images/cow.jpg";
 }
 
 function makeGreen9() {
@@ -147,6 +157,7 @@ function makeGreen9() {
     wrong9.forEach((e) => {e.disabled = true})
     let hide = document.getElementById('hide9');
     hide.classList.remove('hide');
+    document.getElementById("image9").src = "Assets/Images/crocodile.jpg";
 }
 
 function makeGreen10() {
@@ -158,6 +169,7 @@ function makeGreen10() {
     wrong10.forEach((e) => {e.disabled = true})
     let hide = document.getElementById('hide10');
     hide.classList.remove('hide');
+    document.getElementById("image10").src = "Assets/Images/caterpillar.jpg";
 }
 
 //The following code will change all the incorrect answers of the question red if any incorrect answer is selected
