@@ -22,9 +22,8 @@ footer {
 }
 
 #navbarNavDropdown ul li {
-    font-family: 'Lobster', cursive;
-    font-size: 1.4rem;
-    margin-left: 5;
+    font-family: 'Patrick Hand', cursive;
+    margin-left: 5px;
 }
 
 #navbarNavDropdown ul li :hover{
@@ -36,7 +35,9 @@ footer {
 }
 
 #game-name {
-    font-size: 1.3rem;
+    font-size: 2rem;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 500;
 }
 
 #card-shadow {
