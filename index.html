@@ -50,7 +50,7 @@
 </div>
   </header>
 
-  <div class="container py-5">
+  <div class="container py-5 hide">
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card"  >
@@ -64,7 +64,7 @@
                             <p class="welcome-text">Let's test your knowledge and see how many you can identify!</p>
                             <p class="welcome-text">You can view the "How to Play" page or simply begin by pressing start!</p>
                             <p class="welcome-text">All the best!!!</p>
-                            <button class="btn mt-1 px-4">Start</button>
+                            <button class="btn mt-1 px-4" onclick="next(1)" >Start</button>
                             
                             </div>
                         </div>
@@ -74,7 +74,7 @@
     </div>
 </div>
 
-<div class="container py-5">
+<div class="container py-5 hide">
     <div class="row justify-content-center" >
         <div class="col-md-6">
             <div class="card"  >
@@ -86,13 +86,13 @@
                                 <h4><b>Who does the poo belong&nbsp;to???</b></h4>
                             </div>
                             
-                            <button class="btn btn-grid">Crocodile</button>
-                            <button class="btn btn-grid">Elephant</button>
-                            <button class="btn btn-grid">Horse</button>
-                            <button class="btn btn-grid">Dung Beatle</button>
-                            <div><button id="next-btn" class="btn hide">Next</button></div>
-                            </div>
+                            <button class="btn btn-grid wrong1">Crocodile</button>
+                            <button id="correct1" class="btn btn-grid score-plus">Elephant</button>
+                            <button class="btn btn-grid wrong1">Horse</button>
+                            <button class="btn btn-grid wrong1">Dung Beatle</button>
+                            <div><button id="hide1" class="btn next-btn hide" onclick="next(2)">Next</button></div>
                             
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@
     </div>
 </div>
 
-<div class="container py-5">
+<div class="container py-5 hide">
     <div class="row justify-content-center" >
         <div class="col-md-6">
             <div class="card"  >
@@ -112,14 +112,14 @@
                                 <h4><b>Who does the poo belong&nbsp;to???</b></h4>
                             </div>
                             
-                            <button class="btn btn-grid">Bull</button>
-                            <button class="btn btn-grid">Parrot</button>
-                            <button class="btn btn-grid">Sheep</button>
-                            <button class="btn btn-grid">Zebra</button>
-                            <div><button id="next-btn" class="btn hide">Next</button></div>
-                            </div>
+                            <button class="btn btn-grid wrong2">Bull</button>
+                            <button class="btn btn-grid wrong2">Parrot</button>
+                            <button id="correct2" class="btn btn-grid score-plus">Sheep</button>
+                            <button class="btn btn-grid wrong2">Zebra</button>
+                            <div><button id="hide2" class="btn next-btn hide" onclick="next(3)">Next</button></div>
                             
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,7 +127,7 @@
 </div>
 
 
-<div class="container py-5">
+<div class="container py-5 hide">
     <div class="row justify-content-center" >
         <div class="col-md-6">
             <div class="card"  >
@@ -139,21 +139,21 @@
                                 <h4><b>Who does the poo belong&nbsp;to???</b></h4>
                             </div>
                             
-                            <button class="btn btn-grid">Bird</button>
-                            <button class="btn btn-grid">Rabbit</button>
-                            <button class="btn btn-grid">Mouse</button>
-                            <button class="btn btn-grid">Bat</button>
-                            <div><button id="next-btn" class="btn hide">Next</button></div>
-                            </div>
+                            <button class="btn btn-grid wrong3">Bird</button>
+                            <button class="btn btn-grid wrong3">Rabbit</button>
+                            <button class="btn btn-grid wrong3">Mouse</button>
+                            <button id="correct3" class="btn btn-grid score-plus">Bat</button>
+                            <div><button id="hide3" class="btn next-btn hide" onclick="next(4)">Next</button></div>
                             
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container py-5">
+<div class="container py-5 hide">
     <div class="row justify-content-center" >
         <div class="col-md-6">
             <div class="card"  >
@@ -165,21 +165,21 @@
                                 <h4><b>Who does the poo belong&nbsp;to???</b></h4>
                             </div>
                             
-                            <button class="btn btn-grid">Shark</button>
-                            <button class="btn btn-grid">Dolphin</button>
-                            <button class="btn btn-grid">Whale</button>
-                            <button class="btn btn-grid">Sea Lion</button>
-                            <div><button id="next-btn" class="btn hide">Next</button></div>
-                            </div>
-                            
+                            <button class="btn btn-grid wrong4">Shark</button>
+                            <button class="btn btn-grid wrong4">Dolphin</button>
+                            <button id="correct4" class="btn btn-grid score-plus">Whale</button>
+                            <button class="btn btn-grid wrong4">Sea Lion</button>
+                            <div><button id="hide4" class="btn next-btn hide" onclick="next(5)">Next</button></div>
+                        
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container py-5">
+<div class="container py-5 hide">
     <div class="row justify-content-center" >
         <div class="col-md-6">
             <div class="card"  >
@@ -191,21 +191,22 @@
                                 <h4><b>Who does the poo belong&nbsp;to???</b></h4>
                             </div>
                             
-                            <button class="btn btn-grid">Anaconda</button>
-                            <button class="btn btn-grid">Kangaroo</button>
-                            <button class="btn btn-grid">Badger</button>
-                            <button class="btn btn-grid">Barn Owl</button>
-                            <div><button id="next-btn" class="btn hide">Next</button></div>
-                            </div>
+                            <button class="btn btn-grid wrong5">Anaconda</button>
+                            <button class="btn btn-grid wrong5">Kangaroo</button>
+                            <button class="btn btn-grid wrong5">Badger</button>
+                            <button id="correct5" class="btn btn-grid score-plus">Barn Owl</button>
+                            <div><button id="hide5" class="btn next-btn hide" onclick="next(6)">Next</button></div>
                             
                         </div>
+                            
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container py-5">
+<div class="container py-5 hide">
     <div class="row justify-content-center" >
         <div class="col-md-6">
             <div class="card"  >
@@ -217,11 +218,11 @@
                                 <h4><b>Who does the poo belong&nbsp;to???</b></h4>
                             </div>
                             
-                            <button class="btn btn-grid">Seagull</button>
-                            <button class="btn btn-grid">Penguin</button>
-                            <button class="btn btn-grid">Budgie</button>
-                            <button class="btn btn-grid">Cat</button>
-                            <div><button id="next-btn" class="btn hide">Next</button></div>
+                            <button id="correct6" class="btn btn-grid score-plus">Seagull</button>
+                            <button class="btn btn-grid wrong6">Penguin</button>
+                            <button class="btn btn-grid wrong6">Budgie</button>
+                            <button class="btn btn-grid wrong6">Cat</button>
+                            <div><button id="hide6" class="btn next-btn hide" onclick="next(7)">Next</button></div>
                             </div>
                             
                         </div>
@@ -231,7 +232,7 @@
     </div>
 </div>
 
-<div class="container py-5">
+<div class="container py-5 hide">
     <div class="row justify-content-center" >
         <div class="col-md-6">
             <div class="card"  >
@@ -243,11 +244,11 @@
                                 <h4><b>Who does the poo belong&nbsp;to???</b></h4>
                             </div>
                             
-                            <button class="btn btn-grid">Hedgehog</button>
-                            <button class="btn btn-grid">Dog</button>
-                            <button class="btn btn-grid">Slug</button>
-                            <button class="btn btn-grid">Toad</button>
-                            <div><button id="next-btn" class="btn hide">Next</button></div>
+                            <button class="btn btn-grid wrong7">Hedgehog</button>
+                            <button class="btn btn-grid wrong7">Dog</button>
+                            <button class="btn btn-grid wrong7">Slug</button>
+                            <button id="correct7" class="btn btn-grid score-plus">Toad</button>
+                            <div><button id="hide7" class="btn next-btn hide" onclick="next(8)">Next</button></div>
                             </div>
                             
                         </div>
@@ -257,7 +258,7 @@
     </div>
 </div>
 
-<div class="container py-5">
+<div class="container py-5 hide">
     <div class="row justify-content-center" >
         <div class="col-md-6">
             <div class="card"  >
@@ -269,11 +270,11 @@
                                 <h4><b>Who does the poo belong&nbsp;to???</b></h4>
                             </div>
                             
-                            <button class="btn btn-grid">Pony</button>
-                            <button class="btn btn-grid">Bear</button>
-                            <button class="btn btn-grid">Cow</button>
-                            <button class="btn btn-grid">Iguana</button>
-                            <div><button id="next-btn" class="btn hide">Next</button></div>
+                            <button class="btn btn-grid wrong8">Pony</button>
+                            <button class="btn btn-grid wrong8">Bear</button>
+                            <button id="correct8" class="btn btn-grid score-plus">Cow</button>
+                            <button class="btn btn-grid wrong8">Iguana</button>
+                            <div><button id="hide8" class="btn next-btn hide" onclick="next(9)">Next</button></div>
                             </div>
                             
                         </div>
@@ -283,7 +284,7 @@
     </div>
 </div>
 
-<div class="container py-5">
+<div class="container py-5 hide">
     <div class="row justify-content-center" >
         <div class="col-md-6">
             <div class="card"  >
@@ -295,11 +296,11 @@
                                 <h4><b>Who does the poo belong&nbsp;to???</b></h4>
                             </div>
                             
-                            <button class="btn btn-grid">Giraffe</button>
-                            <button class="btn btn-grid">Tiger</button>
-                            <button class="btn btn-grid">Leopard</button>
-                            <button class="btn btn-grid">Crocodile</button>
-                            <div><button id="next-btn" class="btn hide">Next</button></div>
+                            <button class="btn btn-grid wrong9">Giraffe</button>
+                            <button class="btn btn-grid wrong9">Tiger</button>
+                            <button class="btn btn-grid wrong9">Leopard</button>
+                            <button id="correct9" class="btn btn-grid score-plus">Crocodile</button>
+                            <div><button id="hide9" class="btn next-btn hide" onclick="next(10)">Next</button></div>
                             </div>
                             
                         </div>
@@ -309,7 +310,7 @@
     </div>
 </div>
 
-<div class="container py-5">
+<div class="container py-5 hide">
     <div class="row justify-content-center" >
         <div class="col-md-6">
             <div class="card"  >
@@ -321,11 +322,11 @@
                                 <h4><b>Who does the poo belong&nbsp;to???</b></h4>
                             </div>
                             
-                            <button class="btn btn-grid">Spider</button>
-                            <button class="btn btn-grid">Caterpillar</button>
-                            <button class="btn btn-grid">Ant</button>
-                            <button class="btn btn-grid">Bumble bee</button>
-                            <div><button id="next-btn" class="btn hide">Next</button></div>
+                            <button class="btn btn-grid wrong10">Spider</button>
+                            <button id="correct10" class="btn btn-grid score-plus">Caterpillar</button>
+                            <button class="btn btn-grid wrong10">Ant</button>
+                            <button class="btn btn-grid wrong10">Bumble bee</button>
+                            <div><button id="hide10" class="btn next-btn hide">See Result</button></div>
                             </div>
                             
                         </div>
@@ -348,7 +349,7 @@
     <!-- font awesome icons -->
     <script src="https://kit.fontawesome.com/b7393e8d5a.js" crossorigin="anonymous"></script>
     <!-- Personal Local JavaScript file -->
-    <script src="Assets/CSS/JavaScript.js"></script>
+    <script src="Assets/JavaScript/JavaScript.js"></script>
     <!-- Bootstrap CDN -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
