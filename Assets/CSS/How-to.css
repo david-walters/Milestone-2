@@ -20,10 +20,11 @@ text-shadow: 0px 0px 3px #f3d67f, 0px 0px 8px #f3d67f;
 }
 
 .htp-text {
-font-size: 1.2em;
-font-family: 'Kanit', sans-serif;
+font-size: 1.3em;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 text-align: center;
-color: rgb(35, 35, 35);
+font-weight: 500;
+color: #545b62;
 }
 .htp-text-last {
     font-size: 1.2em;
