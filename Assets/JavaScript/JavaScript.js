@@ -20,20 +20,22 @@ const wrong8 = document.querySelectorAll('.wrong8');
 const wrong9 = document.querySelectorAll('.wrong9');
 const wrong10 = document.querySelectorAll('.wrong10');
 
-const scorePlus = document.querySelectorAll('.score-plus')
-
 let score = 0
 
+const scorePlus = document.querySelectorAll('.score-plus')
+
+const yourResult = document.getElementById('your-result');
+const comment = document.getElementById('comment');
 
 //This will be for the start button and every next button to go to the next question.
 //This code was obtained from a YouTube — https://www.youtube.com/watch?v=j9Elj5Sxfug
 
-    document.getElementsByClassName('hide')[0].style.display = "block";
+document.getElementsByClassName('hide')[0].style.display = "block";
 
 function next(id) {
     
-    document.getElementsByClassName('hide')[id-1].style.display = "none";
-    document.getElementsByClassName('hide')[id].style.display = "block";
+document.getElementsByClassName('hide')[id-1].style.display = "none";
+document.getElementsByClassName('hide')[id].style.display = "block";
 }
 
 //The following code will make the correct answer exclusively highlight as bright green when the correct answer is selected
@@ -358,3 +360,19 @@ scorePlus.forEach(e => {
 
     } )
 })
+
+function showResult() {
+
+    yourResult.innerHTML = `You Scored ${score}/10!!!`;
+
+    if(score <= 4) {
+            comment.innerHTML = "I think you need to get your... stuff together!";
+    } else if(score <= 7) {
+            comment.innerHTML = "Fair play, not a bad effort.";
+    } else if(score <= 9) {
+
+        comment.innerHTML = "Very impressive!";
+    } else{
+        comment.innerHTML = "I'm actually concerned that you got all those correct...";
+    }
+}
