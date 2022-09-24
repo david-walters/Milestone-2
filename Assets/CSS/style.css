@@ -119,3 +119,15 @@ h4 {
    margin-top: 10px;
    max-height: 50px;
 }
+
+#your-result  {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+#comment {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
