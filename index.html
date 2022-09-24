@@ -326,7 +326,7 @@
                             <button id="correct10" class="btn btn-grid score-plus">Caterpillar</button>
                             <button class="btn btn-grid wrong10">Ant</button>
                             <button class="btn btn-grid wrong10">Bumble bee</button>
-                            <div><button id="hide10" class="btn next-btn hide">See Result</button></div>
+                            <div><button id="hide10" onclick="next(11); showResult();" class="btn next-btn hide">See Result</button></div>
                             </div>
                             
                         </div>
@@ -336,6 +336,26 @@
     </div>
 </div>
 
+<div class="container py-5 hide">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card"  >
+                <div class="card-body" id="card-shadow">
+                    <div class="row">
+                        <div class="col-lg-12 text-center" >
+                            <div class="text-center py-2 mb-4" id="welcome-title">
+                                <p><b>Here is your result!!!</b></p>
+                            </div>
+                            <p id="your-result" class="welcome-text"></p>
+                            <p id="comment" class="welcome-text"></p>
+                            <p class="welcome-text">Click on the poo emoji at the top if you'd like to start again!</p>                           
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Footer -->
 <footer class="page-footer font-small">
