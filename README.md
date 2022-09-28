@@ -1,13 +1,16 @@
 # Dave' Game - Milestone Project 2
 
+
 This is a website that I created which is my second assignment on the Front-End Web Development course with The Learning People. The tasks of my assignment were the following;
 
 >Overview:
->- Create an online Quiz of your choice
+>- Create an online Quiz of your choice.
 >- You will include a ‘How To’ page with clear instructions.
 >- You must use appropriate use of JavaScript for the Quiz functionality.
 >- You will regularly commit your work to Github as you create your website.
->- There are many examples online of a variation of JavaScript Quizzes
+>- There are many examples online of a variation of JavaScript Quizzes.
+
+
 
 
 ## Steps I Took to Complete This Assignment
@@ -20,7 +23,7 @@ I wanted the the correct answer to highlight green if it was selected and if the
 
 I used some course materials to learn basic coding with JS and a few Youtube videos on how to understand JS when making a quiz.
 
-My website was started off by the making of the navbar and footer — using bootstrap. Once that was done I started the welcome pop-up adding a start button and then I moved on to build the how-to-play page before designing the question containers holding the images and answer buttons — I thought that will be a more lengthy task so I thought to get the simple tasks out the way first. Then I created most the JavaScript code to make it all into a functioning quiz before I created a results pop-up at the end providing the user their score along with a comment that suits their score
+My website was started off by the making of the navbar and footer — using bootstrap. Once that was done I started the welcome pop-up adding a start button and then I moved on to build the how-to-play page before designing the question containers holding the images and answer buttons — I thought that will be a more lengthy task so I thought to get the simple tasks out the way first. Then I created most the JavaScript code to make it all into a functioning quiz before I created a results pop-up at the end providing the user their score along with a comment that suits their score.
 
 I predominantly dealt with HTML and CSS first and making everything responsive to mobile, tablet etc. before moving onto JavaScript. It seemed like the logical thing to do being as JavaScript is about manipulating the DOM.
 
@@ -50,13 +53,12 @@ Many of my images were obtained from **Pixabay** (free downloadable images websi
     height: 75%;
     max-height: 224px;
     border-radius: 20px;
-    border: solid 6px  #1c6841;
+    border: solid 6px #1c6841;
     padding: 1.1px 1.2px;
-
 ```
 Then with Google Chrome's dev tools I used the inspection tool to see if all the images had the same size specifications. Some images needed to be edited with the crop tool to achieve this as some would take differnt amount of pixels when in mobile view.
 
-### Results Pop
+### Results Pop-up
 
 For the results pop-up I used the same container that I used in the How-to-play page — changing the title to "Here is Your result!!!" and having two empty <p> tags after it, and a final <p> tag to instruct how to reset the game (by clicking on to poo emoji in the navbar). The first <p> tag has the id of "your-result" and the second one has the id of "comment". These will be accessed with JavaScript to provide the score and the comment that is in accordance to the score.
 
@@ -68,8 +70,26 @@ JavaScript is essential for the functionality of the quiz. Without it there is n
 
 The 'next' functionality is all about removing the 'hide' class to reveal the next question container and to add the 'hide' class on the current container (to make it disappear). I applied the same functionality to the 'start' button to get rid of the welcome pop-up and to reveal the first question.
 
-All the containers for the quiz (including the welcome pop-up and the results pop-up) have the class 'hide' which is simply `display: none;` So, as of yet, nothing can be seen on the home page. 
+All the containers for the quiz (including the welcome pop-up and the results pop-up) have the class 'hide' which is simply `display: none;` So, as of yet, nothing can be seen on the home page until the 'next' function is established, which is as follows;
 
+```
+document.getElementsByClassName('hide')[0].style.display = "block";
+
+function next(id) {
+    
+document.getElementsByClassName('hide')[id-1].style.display = "none";
+document.getElementsByClassName('hide')[id].style.display = "block";
+}
+```
+When you use `getElementsByClassName` it registers every element of that class into an array with the first one being at index 0.
+
+As you can see in the block of code above, the first line of code is referencing the 'hide' class at index 0, which is the welcome pop-up, so that will then be displayed as a block element. Underneath that is my 'next' function. This will take a parameter and will be refenced as 'id'.
+
+This is how it will work:
+
+On my start button in the HTML, I have `onclick="next(1)"` applied to it. This will mean that the code `[id-1].style.display = "none";` will essentially mean `[1-1].style.display = "none";`, and 1 - 1 will make 0... so the class at index 0 will have the display of `"none"`, and the code `[id].style.display = "block";` which will essentially mean `[1].style.display = "block";` which will make the 'hide' class at index 1 have the display changed to `"block"` thus, revealing the next container which is the first question. On that question is a 'next' button with `onclick="next(2)"` applied to it — folowing the same concept and making the class at index 1 have the display of `"none"` and the class at index 2 have the display of `"block"` thus, revealing the next container which is the second question.
+
+### Incorrect Answers/Buttons
 
 
 
