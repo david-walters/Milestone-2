@@ -367,11 +367,10 @@ function showResult() {
 
     if(score <= 4) {
             comment.innerHTML = "I think you need to get your... stuff together!";
-    } else if(score <= 7) {
+    } else if(score <= 6) {
             comment.innerHTML = "Fair play, not a bad effort.";
     } else if(score <= 9) {
-
-        comment.innerHTML = "Very impressive!";
+            comment.innerHTML = "Very impressive! It seems like you know your... stuff!";
     } else{
         comment.innerHTML = "I'm actually concerned that you got all those correct...";
     }
