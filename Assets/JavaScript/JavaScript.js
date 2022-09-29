@@ -39,9 +39,9 @@ document.getElementsByClassName('hide')[id].style.display = "block";
 }
 
 //The following code will make the correct answer exclusively highlight as bright green when the correct answer is selected
-//It will also become disabled to stop adding to the score and the wrong ones will also become disabled for a goo effect
+//It will iterate the score and become disabled to stop adding to the score, and the wrong ones will also become disabled for a good effect
 //It will also remove hide on the next button to reveal it
-//It will also change the image to the animal of the correct answer
+//It will also change the image source to the animal of the correct answer
 
 correct1.addEventListener('click', makeGreen1);
 correct2.addEventListener('click', makeGreen2);
