@@ -10,7 +10,7 @@ This is a website that I created which is my second assignment on the Front-End 
 >- You will regularly commit your work to Github as you create your website.
 >- There are many examples online of a variation of JavaScript Quizzes.
 
-
+<br>
 
 
 ## Steps I Took to Complete This Assignment
@@ -61,6 +61,8 @@ Then with Google Chrome's dev tools I used the inspection tool to see if all the
 ### Results Pop-up
 
 For the results pop-up I used the same container that I used in the How-to-play page — changing the title to "Here is Your result!!!" and having two empty `<p>` tags after it, and a final `<p>` tag to instruct how to reset the game (by clicking on the poo emoji in the navbar). The first `<p>` tag has the id of "your-result" and the second one has the id of "comment". These will be accessed with JavaScript to provide the score and the comment that is in accordance to the score.
+
+<br>
 
 ## Use of JavaScript
 
@@ -191,7 +193,7 @@ The last line of code in the code above will change the image source. Each image
 
 ### Revealing Results and Comment
 
-On the 'see result' button in the HTML, I have applied an onclick event with the function'showResult', which I later established in JavaScript as the following;
+On the 'see result' button in the HTML, I have applied an onclick event with the function 'showResult', which I later established in JavaScript as the following;
 
 ```
 function showResult() {
@@ -220,8 +222,41 @@ The first `<p>` tag, having the id of yourResult, will insert the sentence `You 
 
 The second `<p>` tag, having the id of 'comment' will insert one of the 4 comments in the above block of code into the innerHTML. The first comment will be inserted if the value of 'score' is less than or equal to 4. If the value of 'score' does not fit this equation, then it will move to the next code to see if it is befitting to that one, (if so then it will insert that comment) and if not, then it will move to the next one. The maximum score that can be reached is 10, so it will have to insert one of those 4 comments once the see result button is selected. 
 
+<br>
+
 
 ## Interesting Issues Through Developing
+
+### Issue 1
+
+A very interesting issue I had which I learned a lot from is not being able to have any of my files located when clicking on the link to see my website live through github, despite having them all added to github. It gave me a reminder that I need to have an index.html file... but I did...
+
+I then realised the issue — I had my index.html written with a capital I and not a lowercase i.
+
+So, once I rectified this, I had another issue adding the file, after changing its name, into the working tree in git. I technically changed the name of the file but git is still working with the old name and not recognising the new one. I then came to learn the following after a Google search;
+
+To rename a file in git, use the git command with mv along with two arguments. The first argument will have the old file name and the second argument will have the new file name. Just like this `git mv Index.html index.html`. If the second argument is a name of a folder, then instead of a rename it wil move the file to that folder. Once I did this, it then worked perfectly.
+
+### Issue 2
+
+I attempted to declare a const by getting an element by its id and naming it 'result'. Once I checked my website in the browser the whole entire content for the quiz had disappeared... I thought perhaps 'result' is a key word and it has caused some unknown issues. I kept renaming the variable and none of them fixed it. 
+
+I then realised... `const yourResult = document.getElementById(your-result);` the id name inside the parentheses were missing quotes like so `document.getElementById('your-result');` and because it was at the very top of the global scope, it prevented the rest of the code from being executed and thus; not showing the welcome pop-up because the hide class was not being removed, so everything was hidden.
+
+### Issue 3
+
+This one is a classic, I'm sure this happens to every newby;
+
+`yourResult.innerHTML = "You Scored ${score}/10!!!";`
+
+The innerHTML literally got printed as it is written and not as the expected string valuable of the variable score... All because I used double quotation marks instead of single back ticks.
+
+### General Issues
+
+All my other issues were basically the same thing over and over again. Because I was very new to JavaScript, I just kept experimenting with code and hoping to get desired results. It was mainly down to syntax errors and lack of knowledge of what options I could use that caused the issues. Some things I guesed and it worked and others I had to Google how to see how others do it and I extrapolated what I learned. The vast majority of it was trial and error, and I got here in the end.
+
+
+<br>
 
 
 
