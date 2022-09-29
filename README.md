@@ -1,4 +1,4 @@
-# Dave' Game - Milestone Project 2
+# Dave's Game - Milestone Project 2
 
 
 This is a website that I created which is my second assignment on the Front-End Web Development course with The Learning People. The tasks of my assignment were the following;
@@ -17,7 +17,7 @@ This is a website that I created which is my second assignment on the Front-End 
 
 Having some experience of buiding a website, I had a good idea of a quiz/game that I planned in my head. I was very new to JavaScript so I thought I'd make a fun quiz but more towards a game as I thought a plain quiz would be too boring and simple.
 
-I thought it will be interestiong to make a quiz based on images of different animal poos — quizing the user to see if they can guess what animal it was from. I thought this will be a very interesting game and fun also. So having an image of the poo with 4 options beneath with only one being correct. 
+I thought to make a quiz based on images of different animal poos — quizing the user to see if they can guess what animal it was from. I thought this will be a very interesting game and fun also. So having an image of the poo with 4 options beneath with only one being correct. 
 
 I wanted the the correct answer to highlight green if it was selected and if the incorrect ones were selected then for them to turn red, but also to always have the correct one turn green even if the wrong one is selected to show the user the correct answer. I wanted the poo image to also change source to the picture of the animal as a more exciting way of revealing the answer.
 
@@ -29,7 +29,7 @@ I predominantly dealt with HTML and CSS first and making everything responsive t
 
 ### Navbar and Footer
 
-The navbar has a poo emoji acting like a logo with the name of the game (**Guess Poo**) attached to the right of it. I added two anchor tags to navigate from the Home page and to the How-to-play page which collapes into a burger button once the screen width becomes less than 576px. The footer was didn't require much information so I wrote a typical copyright statement and I made up a website name with a null link for presentational purposes.
+The navbar has a poo emoji acting like a logo with the name of the game (**Guess Poo**) attached to the right of it. I added two anchor tags to navigate from the Home page and to the How-to-play page which collapes into a burger button once the screen width becomes less than 576px. The footer didn't require much information, so I wrote a typical copyright statement and I made up a website name with a null link for presentational purposes.
 
 ### Welcome Pop-up
 
@@ -37,11 +37,11 @@ I wanted the welcoming message to be a simple pop-up with a provoking statement 
 
 ### How-to-play Page
 
-The how-to-play page had to be what it says on the tin — literally telling someone how to play so that the user is confident with what they see. This had to be updated now and again throughout building the website as I only had an idea in the beginning of what I wanted to build. I used the same colour scheme and HTML structure for the container except that I used 10 0f the 12 collumns in boostrap as this container required a lot more written content.
+The how-to-play page had to be what it says on the tin — literally telling someone how to play so that the user is confident with what they see. This had to be updated now and again throughout building the website as I only had an idea in the beginning of what I wanted to build. I used the same colour scheme and HTML structure for the container except that I used 10 of the 12 collumns in boostrap as this container required a lot more written content.
 
 ### Question Containers
 
-The question containers have only what was required and no more as it is going to be repetative and just simply prompting the user for the answer to the question "who does the poo belong to?" So the main thing I needed was a clear image to the question (first thing to be seen), the repeated question underneath (who does the poo belong to?), and then below that; 4 clear options to choose from (only one being the correct answer), and one other essentional componant for the quiz is the next button which appears underneath the answers only after an answer has been selected. So the user has the choice to analyze the correct answer and to see the animal image that appears after answering before moving on to the next question.
+The question containers have only what was required and no more as it is going to be repetative and just simply prompting the user for the answer to the question "who does the poo belong to?" So the main thing I needed was a clear image to the question (first thing to be seen), the repeated question underneath (who does the poo belong to?), and then below that; 4 clear options to choose from (only one being the correct answer), and one other essential componant for the quiz is the next button which appears underneath the answers only after an answer has been selected. So the user has the choice to analyze the correct answer and to see the animal image that appears after answering before moving on to the next question.
 
 ### Question and Answer Images
 
@@ -60,7 +60,7 @@ Then with Google Chrome's dev tools I used the inspection tool to see if all the
 
 ### Results Pop-up
 
-For the results pop-up I used the same container that I used in the How-to-play page — changing the title to "Here is Your result!!!" and having two empty <p> tags after it, and a final <p> tag to instruct how to reset the game (by clicking on to poo emoji in the navbar). The first <p> tag has the id of "your-result" and the second one has the id of "comment". These will be accessed with JavaScript to provide the score and the comment that is in accordance to the score.
+For the results pop-up I used the same container that I used in the How-to-play page — changing the title to "Here is Your result!!!" and having two empty `<p>` tags after it, and a final `<p>` tag to instruct how to reset the game (by clicking on the poo emoji in the navbar). The first `<p>` tag has the id of "your-result" and the second one has the id of "comment". These will be accessed with JavaScript to provide the score and the comment that is in accordance to the score.
 
 ## Use of JavaScript
 
@@ -87,10 +87,138 @@ As you can see in the block of code above, the first line of code is referencing
 
 This is how it will work:
 
-On my start button in the HTML, I have `onclick="next(1)"` applied to it. This will mean that the code `[id-1].style.display = "none";` will essentially mean `[1-1].style.display = "none";`, and 1 - 1 will make 0... so the class at index 0 will have the display of `"none"`, and the code `[id].style.display = "block";` which will essentially mean `[1].style.display = "block";` which will make the 'hide' class at index 1 have the display changed to `"block"` thus, revealing the next container which is the first question. On that question is a 'next' button with `onclick="next(2)"` applied to it — folowing the same concept and making the class at index 1 have the display of `"none"` and the class at index 2 have the display of `"block"` thus, revealing the next container which is the second question.
+On my start button in the HTML, I have `onclick="next(1)"` applied to it. This will mean that the code `[id-1].style.display = "none";` will essentially mean `[1-1].style.display = "none";`, and 1 - 1 will make 0... so the class at index 0 will have the display of `"none"`, and the code `[id].style.display = "block";` which will essentially mean `[1].style.display = "block";` will make the 'hide' class at index 1 have the display changed to `"block"` thus, revealing the next container which is the first question. On that question is a 'next' button with `onclick="next(2)"` applied to it — folowing the same concept and making the class at index 1 have the display of `"none"` and the class at index 2 have the display of `"block"` thus, revealing the next container which is the second question.
 
 ### Incorrect Answers/Buttons
 
+All the wrong answer buttons on question 1 have the class 'wrong1', and all the wrong answer buttons on question 2 have the class 'wrong2', and so on. I esteblished them all into const variables like so `const wrong1 = document.querySelectorAll('.wrong1');` and then made functions with them all like so;
+
+```
+wrong1.forEach((e) => {
+
+    e.addEventListener('click',() => {    
+        makeRed();
+        makeGreen1();    
+   });
+    
+    function makeRed() {
+
+        wrong1.forEach((el) => {
+        
+        el.style.backgroundColor = 'red';
+
+        })
+    }
+})
+```
+Two functions will be executed when an incorrect button is selected; makeRed and makeGreen1 (there's makeGreen2 and 3 and so on for all correct answers).
+
+As you can see, I made an arrow function inside an arrow function which adds an onclick event listener to all the wrong buttons to execute makeRed and makeGreen functions, and then I established the makeRed function which targets all the incorrect answers with the `forEach` attribute to change the background style to red.
+
+### Correct Answers/Buttons
+
+
+For the correct answer in question 1, I have given it an id of 'correct1', and for question 2 I have given the correct answer the id of 'correct2', and so on. I established them all into const variables like so `const correct1 = document.getElementById('correct1');` to add an onclick event listener to them to execute the makeGreen functions (makeGreen1 for question one, and makeGreen2 for question 2, and so on).
+
+This function will do the following;
+
+```
+function makeGreen1() {
+
+    correct1.style.backgroundColor = 'rgb(7 204 7)';
+    correct1.style.color = '#fff0c4';
+    correct1.style.textShadow = '0px 0px 5px #000000';
+    }
+```
+It will make the button show as green and it will style the writing to make it more visible because white is hard to read in that shade of green. This is also executed when a wrong answer is selected in order to reveal the correct answer to the user.
+
+### Iterating The Score
+
+First of all I had to declare a let variable like so `let score = 0` and intitialize it with the value of 0. This has to be a let variable and not a const as it is going to change through iteration when a correct answer is selected. I then declared a const like so `const scorePlus = document.querySelectorAll('.score-plus')`, this is a class which is applied to every correct answer. I then applied an onclick event on every single correct answer along with an anonymous function like so;
+
+```
+scorePlus.forEach(e => {
+
+    e.addEventListener('click', () => {
+
+        score++
+        console.log(score)
+        console.log('worked')
+
+    } )
+})
+```
+The score++ will iterate score by one and this function will provide the score and the message "worked" in the console to show me that it is funtioning correctly.
+
+### Disabeling The Buttons
+
+If the correct button wasn't disabled after an answer had been selected, then the user could constantly press the correct button and continuously iterate the score. Disabeling the button is essential for that reason. Within the 'makeGreen' functions (because they are executed no matter what answer is selected), I added the following code;
+
+```
+document.querySelector('#correct1').disabled = true;
+wrong1.forEach((e) => {e.disabled = true;});
+```
+This code disables all the wrong buttons and the correct button. I disabled the wrong ones also to add a good effect and to prevent the answers from being changed red if the correct one has been selected.
+
+### Revealing The 'Next' Button
+
+All 'next' buttons have an id — 'hide1' for question one, 'hide2' for question 2 (and so on...). All the 'next' buttons are also hidden with the class 'hide'. I declared the 'hide' ids inside the 'makeGreen' function because that function will always execute no matter what answer is selected. I then followed the decleration with a code to remove the 'hide' class from it, just like the following;
+
+```
+let hide = document.getElementById('hide1');
+hide.classList.remove('hide');
+```
+I thought when adding the 'hide' class to the 'next' buttons it will affect the 'next' function because the 'hide' classes are all put into an array which are accesed in the function, but due to the fact that this code removes the 'hide' class from the 'next' button, that means it also takes that out of the array, so there are no logical errors with the 'next' funtion.
+
+### Changing The Image Source
+
+Again, because the image source is going to change when any answer is selected, I put the required code into the 'makeGreen' functions because that will also execute no matter what answer is selected. So my 'makeGreen' functions look like the following;
+
+```
+function makeGreen1() {
+
+    correct1.style.backgroundColor = 'rgb(7 204 7)';
+    correct1.style.color = '#fff0c4';
+    correct1.style.textShadow = '0px 0px 5px #000000';
+    document.querySelector('#correct1').disabled = true;
+    wrong1.forEach((e) => {e.disabled = true;});
+    let hide = document.getElementById('hide1');
+    hide.classList.remove('hide');
+    document.getElementById("image1").src = "Assets/Images/elephant.webp";
+}
+```
+The last line of code in the code above will change the image source. Each image has an id from 'image1' to 'image10' and they all change to the appropriate image source once an answer is selected.
+
+### Revealing Results and Comment
+
+On the 'see result' button in the HTML, I have applied an onclick event with the function'showResult', which I later established in JavaScript as the following;
+
+```
+function showResult() {
+
+    yourResult.innerHTML = `You Scored ${score}/10!!!`;
+
+    if(score <= 4) {
+            comment.innerHTML = "I think you need to get your... stuff together!";
+    } else if(score <= 6) {
+            comment.innerHTML = "Fair play, not a bad effort.";
+    } else if(score <= 9) {
+            comment.innerHTML = "Very impressive! It seems like you know your... stuff!";
+    } else{
+        comment.innerHTML = "I'm actually concerned that you got all those correct...";
+    }
+}
+```
+So the two empty `<p>` tags on the show result pop-up will have the innerHTML accessed through their ids. Their ids were made as const variables at the beginning of the JS code like so;
+
+```
+const yourResult = document.getElementById('your-result');
+const comment = document.getElementById('comment');
+```
+
+The first `<p>` tag, having the id of yourResult, will insert the sentence `You Scored ${score}/10!!!` into the innerHtml except the code ${score} will print the value of the variable 'score' as a string.
+
+The second `<p>` tag, having the id of 'comment' will insert one of the 4 comments in the above block of code into the innerHTML. The first comment will be inserted if the value of 'score' is less than or equal to 4. If the value of 'score' does not fit this equation, then it will move to the next code to see if it is befitting to that one, (if so then it will insert that comment) and if not, then it will move to the next one. The maximum score that can be reached is 10, so it will have to insert one of those 4 comments once the see result button is selected. 
 
 
 ## Interesting Issues Through Developing
