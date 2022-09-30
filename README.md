@@ -249,11 +249,11 @@ This one is a classic, I'm sure this happens to every newby;
 
 `yourResult.innerHTML = "You Scored ${score}/10!!!";`
 
-The innerHTML literally got printed as it is written and not as the expected string valuable of the variable score... All because I used double quotation marks instead of single back ticks.
+This code literally printed ${score} in the innerHTML as it is written and not as the expected string valuable of the variable score... All because I used double quotation marks instead of single back ticks.
 
 ### General Issues
 
-All my other issues were basically the same thing over and over again. Because I was very new to JavaScript, I just kept experimenting with code and hoping to get desired results. It was mainly down to syntax errors and lack of knowledge of what options I could use that caused the issues. Some things I guesed and it worked and others I had to Google how to see how others do it and I extrapolated what I learned. The vast majority of it was trial and error, and I got here in the end.
+All my other issues were basically the same thing over and over again. I was very new to JavaScript so I just kept experimenting with code and hoping to get desired results. It was mainly down to syntax errors and lack of knowledge of what options I could use that caused the issues. Some things I guesed and it worked and others I had to Google to see how others do it, and I extrapolated from them some knowledge and skills to then work with the project. The vast majority of it was trial and error, and I got there in the end.
 
 
 <br>
@@ -319,11 +319,11 @@ The hosting platform that I've used for my project is GitHub Pages. To deploy my
 
 ## Personal Overview
 
-From the beginning to end of this assignment, it has been a big journey for me. I started with no experience and I experienced so much in such little time. I came across many hurdles that I overcame through perserverance, problem solving, and research — all of it went in my favour.
+From the beginning to the end of this assignment, it has been a big journey for me. I started with no experience and I experienced so much in such little time. I came across many hurdles that I overcame through perserverance, problem solving, and research — all of it went in my favour as progression.
 
-I have so much more to learn, more experience to gain, and I can imagine that I will look back at this website one day and think "What on earth was I thinking" :joy:
+I have so much more to learn, more experience to gain, and I can imagine that I will look back at the code I have written and see that I could have done it in a much easier and efficiant way and in possibly a fraction of the time — I hope :joy:
 
-It has been a great experience and I'm looking forward to working on my other project assignments that I shall be uploading to my portfolio for people to see.
+This prjoect has given me a lot of love for JavaScript. I didn't think I'd enjoy so much. It also took away the intimdation of JavaScript as I orignally seen it and thought I will struggle to understand it. So this project has really been beneficial in many ways and I'm looking forward to dealing with it more.
 
 Thanks for checking this out! 
 
